@@ -18,6 +18,8 @@ namespace CursoCSharp.EstruturaDeControle
             int tentativaRestantes = 5;
             int tentativas = 0;
 
+            //while(true){}
+
             while (tentativaRestantes > 0 && !numeroEncontrado)
             {
                 Console.WriteLine("Insira seu palpite: ");
