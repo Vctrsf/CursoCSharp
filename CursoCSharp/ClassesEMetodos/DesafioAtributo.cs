@@ -13,7 +13,9 @@ namespace CursoCSharp.ClassesEMetodos
         public static void Executar()
         {
             //Acessar a variavel 'a' dentro do método Executar!
-            
+            //Console.WriteLine(a);
+            DesafioAtributo desafio = new DesafioAtributo();
+            Console.WriteLine(desafio.a);
         }
     }
 }
