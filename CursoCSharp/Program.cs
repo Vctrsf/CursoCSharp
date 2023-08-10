@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using CursoCSharp.Fundamentos;
 using CursoCSharp.EstruturaDeControle;
 using CursoCSharp.ClassesEMetodos;
+using static CursoCSharp.ClassesEMetodos.CarroOpcional;
 
 namespace CursoCSharp
 {
@@ -51,8 +52,10 @@ namespace CursoCSharp
                 {"Params  - Classes e Métodos", Params.Executar},
                 {"Parâmetros Nomeados  - Classes e Métodos", ParametrosNomeados.Executar},
                 {"Get Set  - Classes e Métodos", GetSet.Executar},
+                {"Propriedades - Classes e Métodos", Props.Executar},
+                {"Readonly - Classes e Métodos", Readonly.Executar},
 
-            });
+            }); ;
             central.SelecionarEExecutar();
         }
     } 
