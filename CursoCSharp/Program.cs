@@ -5,6 +5,7 @@ using CursoCSharp.Fundamentos;
 using CursoCSharp.EstruturaDeControle;
 using CursoCSharp.ClassesEMetodos;
 using static CursoCSharp.ClassesEMetodos.CarroOpcional;
+using static CursoCSharp.ClassesEMetodos.Coordenada;
 
 namespace CursoCSharp
 {
@@ -54,6 +55,12 @@ namespace CursoCSharp
                 {"Get Set  - Classes e Métodos", GetSet.Executar},
                 {"Propriedades - Classes e Métodos", Props.Executar},
                 {"Readonly - Classes e Métodos", Readonly.Executar},
+                {"Exemplo Enum - Classes e Métodos", ExemploEnum.Executar},
+                {"Struct - Classes e Métodos", ExemploStruct.Executar},
+                {"Struct vs Classe - Classes e Métodos", StructVsClasse.Executar},
+                {"Valor vs Referencia - Classes e Métodos", ValorVsReferencia.Executar},
+                {"Parâmetros por Referência - Classes e Métodos", ParametrosPorReferencia.Executar},
+                {"Parâmetro com Valor Padrão - Classes e Métodos", ParametroPadrao.Executar},
 
             }); ;
             central.SelecionarEExecutar();
