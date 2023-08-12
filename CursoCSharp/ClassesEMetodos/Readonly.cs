@@ -10,13 +10,14 @@ namespace CursoCSharp.ClassesEMetodos
     public class Cliente
     {
         public string Nome;
-        readonly DateTime Nascimento;
+        public readonly DateTime Nascimento;
         readonly int x = 100;
 
         public Cliente(string nome, DateTime nascimento)
         {
             Nome = nome;
             Nascimento = nascimento;
+            Nascimento = new DateTime(2020, 10, 10);
         }
 
         public string GetDataDeNascimento()
@@ -32,6 +33,8 @@ namespace CursoCSharp.ClassesEMetodos
 
             Console.WriteLine(novoCliente.Nome);
             Console.WriteLine(novoCliente.GetDataDeNascimento());
+
+            
         }
     }
 }
