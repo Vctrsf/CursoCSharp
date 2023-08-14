@@ -10,7 +10,7 @@ namespace CursoCSharp.ClassesEMetodos
     {
         Acao, Aventura, Terror, Animacao, Comedia
     };
-    public class Filme
+    public class filmes
     {
         public string Titulo;
         public Genero GeneroDoFilme;
@@ -22,7 +22,7 @@ namespace CursoCSharp.ClassesEMetodos
             int id = (int)Genero.Animacao;
             Console.WriteLine(id);
 
-            var filmeParaFamilia = new Filme();
+            var filmeParaFamilia = new filmes();
             filmeParaFamilia.Titulo = "Sharknado 17";
             filmeParaFamilia.GeneroDoFilme = Genero.Comedia;
 
