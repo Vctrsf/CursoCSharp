@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CursoCSharp", "CursoCSharp\CursoCSharp.csproj", "{A3B4FB50-30CD-4F20-A575-68876ADD92AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulamento", "Encapsulamento\Encapsulamento.csproj", "{52CB997F-A14C-43AE-B2C8-8EDB84E21C74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A3B4FB50-30CD-4F20-A575-68876ADD92AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3B4FB50-30CD-4F20-A575-68876ADD92AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3B4FB50-30CD-4F20-A575-68876ADD92AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52CB997F-A14C-43AE-B2C8-8EDB84E21C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52CB997F-A14C-43AE-B2C8-8EDB84E21C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52CB997F-A14C-43AE-B2C8-8EDB84E21C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52CB997F-A14C-43AE-B2C8-8EDB84E21C74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

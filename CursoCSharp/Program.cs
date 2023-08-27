@@ -5,6 +5,7 @@ using CursoCSharp.Fundamentos;
 using CursoCSharp.EstruturaDeControle;
 using CursoCSharp.ClassesEMetodos;
 using CursoCSharp.Colecoes;
+using CursoCSharp.OO;
 using static CursoCSharp.ClassesEMetodos.CarroOpcional;
 using static CursoCSharp.ClassesEMetodos.Coordenada;
 
@@ -74,6 +75,11 @@ namespace CursoCSharp
                 {"Stack - Coleções", ColecoesStack.Executar},
                 {"Dictionary - Coleções", ColecoesDictionary.Executar},
 
+
+                //OO
+                {"Herança - OO", Heranca.Executar},
+                {"Construtor This - OO", ConstrutorThis.Executar},
+                {"Encapsulamento - OO", OO.Encapsulamento.Executar},
             }); ;
             central.SelecionarEExecutar();
         }
