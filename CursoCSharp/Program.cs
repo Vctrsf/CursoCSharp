@@ -8,6 +8,7 @@ using CursoCSharp.Colecoes;
 using CursoCSharp.OO;
 using static CursoCSharp.ClassesEMetodos.CarroOpcional;
 using static CursoCSharp.ClassesEMetodos.Coordenada;
+using static CursoCSharp.OO.Samsung;
 
 namespace CursoCSharp
 {
@@ -80,6 +81,8 @@ namespace CursoCSharp
                 {"Herança - OO", Heranca.Executar},
                 {"Construtor This - OO", ConstrutorThis.Executar},
                 {"Encapsulamento - OO", OO.Encapsulamento.Executar},
+                {"Polimorfismo - OO", Polimorfismo.Executar},
+                {"Abstract - OO", Abstract.Executar},
             }); ;
             central.SelecionarEExecutar();
         }
