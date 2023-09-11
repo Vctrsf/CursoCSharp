@@ -9,6 +9,7 @@ using CursoCSharp.OO;
 using static CursoCSharp.ClassesEMetodos.CarroOpcional;
 using static CursoCSharp.ClassesEMetodos.Coordenada;
 using static CursoCSharp.OO.Samsung;
+using CursoCSharp.MetodosEFuncoes;
 
 namespace CursoCSharp
 {
@@ -85,7 +86,14 @@ namespace CursoCSharp
                 {"Abstract - OO", Abstract.Executar},
                 {"Interface - OO", Interface.Executar},
                 {"Sealed - OO", Sealed.Executar},
-            }); ;
+                
+                //Métodos e Funções
+                {"Exemplo Lambda - Métodos & Funções", ExemploLambda.Executar},
+                {"Lambda Como Delegate - Métodos & Funções", LambdasDelegate.Executar},
+                {"Usandos Delegates - Métodos & Funções", UsandoDelegate.Executar},
+                {"Delegates como Função Anonima - Métodos & Funções", DelegateFuncAnonima.Executar},
+                {"Delegate como Paramêtros - Métodos & Funções", DelegatesComoParametros.Executar},
+            });
             central.SelecionarEExecutar();
         }
     } 
