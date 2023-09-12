@@ -10,6 +10,8 @@ using static CursoCSharp.ClassesEMetodos.CarroOpcional;
 using static CursoCSharp.ClassesEMetodos.Coordenada;
 using static CursoCSharp.OO.Samsung;
 using CursoCSharp.MetodosEFuncoes;
+using CursoCSharp.Exceções;
+using CursoCSharp.API;
 
 namespace CursoCSharp
 {
@@ -93,6 +95,15 @@ namespace CursoCSharp
                 {"Usandos Delegates - Métodos & Funções", UsandoDelegate.Executar},
                 {"Delegates como Função Anonima - Métodos & Funções", DelegateFuncAnonima.Executar},
                 {"Delegate como Paramêtros - Métodos & Funções", DelegatesComoParametros.Executar},
+                {"Métodos de Extensão - Métodos & Funções", MetodosDeExtensao.Executar},
+                
+                
+                //Exceções
+                {"Primeira Exceção - Exceçoes", PrimeiraExcecao.Executar},
+                {"Exceções Personalizadas - Exceçoes", ExcecoesPersonalizadas.Executar},
+                
+                //API
+                {"Primeiro Arquivo- Exceçoes", PrimeiroArquivo.Executar},
             });
             central.SelecionarEExecutar();
         }
