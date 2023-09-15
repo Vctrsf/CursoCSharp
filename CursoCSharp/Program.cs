@@ -103,7 +103,13 @@ namespace CursoCSharp
                 {"Exceções Personalizadas - Exceçoes", ExcecoesPersonalizadas.Executar},
                 
                 //API
-                {"Primeiro Arquivo- Exceçoes", PrimeiroArquivo.Executar},
+                {"Primeiro Arquivo - API", ExtensaoString.PrimeiroArquivo.Executar},
+                {"Lendo Arquivos - API", LendoArquivos.Executar},
+                {"Exemplo FileInfo - API", ExemploFileInfo.Executar},
+                {"Diretórios - API", Diretorios.Executar},
+                {"ExemploDirectoryInfo - API", ExemploDirectoryInfo.Executar},
+                {"Exemplo Path - API", ExemploPath.Executar},
+                {"Exemplo DateTime - API", ExemploDateTime.Executar},
             });
             central.SelecionarEExecutar();
         }
