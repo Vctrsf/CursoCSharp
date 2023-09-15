@@ -10,35 +10,40 @@ namespace CursoCSharp.API
     {
         public static string ParseHome(this string path)
         {
-            string home = Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%");
+
+            string? home = (Environment.OSVersion.Platform == PlatformID.Unix ||
+                Environment.OSVersion.Platform == PlatformID.MacOSX)
+
+                ? Environment.GetEnvironmentVariable("HOME")
+
+                : Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%");
             return path.Replace("~", home);
         }
-    }
-    class PrimeiroArquivo
-    {
-        public static void Executar()
-        {
-            var path = @"~/primeiro_arquivo.txt";
-
-            if (!File.Exists(path))
+         public class PrimeiroArquivo
+         {
+            public static void Executar()
             {
-                using (StreamWriter sw = File.CreateText(path))
+                var path = @"~/primeiro_arquivo.txt".ParseHome();
+
+                if (!File.Exists(path))
                 {
-                    sw.WriteLine("Esse é");
-                    sw.WriteLine("o nosso");
-                    sw.WriteLine("primeiro");
-                    sw.WriteLine("arquivo!");
+                    using (StreamWriter sw = File.CreateText(path))
+                    {
+                        sw.WriteLine("Esse é");
+                        sw.WriteLine("o nosso");
+                        sw.WriteLine("primeiro");
+                        sw.WriteLine("arquivo!");
+                    }
+                }
+                using (StreamWriter sw = File.AppendText(path))
+                {
+                    sw.WriteLine("");
+                    sw.WriteLine("É possível");
+                    sw.WriteLine("adicionar");
+                    sw.WriteLine("mais texto!");
                 }
 
             }
-            using (StreamWriter sw = File.AppendText(path))
-            {
-                sw.WriteLine("");
-                sw.WriteLine("É possível");
-                sw.WriteLine("adicionar");
-                sw.WriteLine("mais texto!");
-            }
         }
-
     }
 }
