@@ -12,6 +12,7 @@ using static CursoCSharp.OO.Samsung;
 using CursoCSharp.MetodosEFuncoes;
 using CursoCSharp.Exceções;
 using CursoCSharp.API;
+using CursoCSharp.Tópicos_Avançados;
 
 namespace CursoCSharp
 {
@@ -110,6 +111,11 @@ namespace CursoCSharp
                 {"ExemploDirectoryInfo - API", ExemploDirectoryInfo.Executar},
                 {"Exemplo Path - API", ExemploPath.Executar},
                 {"Exemplo DateTime - API", ExemploDateTime.Executar},
+                {"Exemplo TimeSpan - API", ExemploTimeSpan.Executar},
+                
+                //Tópicos Avançados
+                { "LINQ - Tópicos Avançados", LINQ.Executar},
+                { "LINQ2 - Tópicos Avançados", LINQ2.Executar},
             });
             central.SelecionarEExecutar();
         }
